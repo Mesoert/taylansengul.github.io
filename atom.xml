@@ -4,7 +4,7 @@
   <title><![CDATA[Kutup]]></title>
   <link href="http://taylansengul.github.io/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-11-26T15:09:38-05:00</updated>
+  <updated>2013-12-24T15:07:40-08:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -14,18 +14,32 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Hat-check Problem]]></title>
+    <link href="http://taylansengul.github.io/blog/2013/12/24/hat-check-problem/"/>
+    <updated>2013-12-24T14:49:11-08:00</updated>
+    <id>http://taylansengul.github.io/blog/2013/12/24/hat-check-problem</id>
+    <content type="html"><![CDATA[<p>Each of $n$ customers gives a hat to a hat-check person at a restaurant. The hat-check person gives the hats back to the customers in a random order. What is the expected number of customers who get back their own hat?</p>
+
+<h2 id="solution">Solution</h2>
+<p>Let $X_i$ be 1 if i-th customer gets own hat back and 0 otherwise. 
+Clearly $E[X_i] = 0 \times Pr(X_i = 0) + 1 \times Pr(X_i = 1) = 0 + 1 \times 1/n = 1/n$.
+Let $X$ be the number of customers who get back their own hat.
+Then <script type="math/tex">X = \sum_{i=1}^n X_i</script>.
+By linearity $E[X] = \sum_{i=1}^n E[X_i] = 1$.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Homebrew: A Short Tutorial]]></title>
     <link href="http://taylansengul.github.io/blog/2013/11/25/homebrew/"/>
-    <updated>2013-11-25T10:49:38-05:00</updated>
+    <updated>2013-11-25T07:49:38-08:00</updated>
     <id>http://taylansengul.github.io/blog/2013/11/25/homebrew</id>
-    <content type="html"><![CDATA[<h2>What is it?</h2>
-
+    <content type="html"><![CDATA[<h2 id="what-is-it">What is it?</h2>
 <p>After a certain point in my coding life, I had to download new software which often did not come as executables. Usually I found some instructions on websites on how to install these software. But the process was lengthy and demotivating, mostly installing other dependencies and dependencies of those dependencies and running cryptic commands.</p>
 
 <p>Luckily, if you are using a Mac, there are several package managers which do this job automatically for you. The most popular ones are <a href="http://brew.sh/">Homebrew</a> and <a href="http://www.macports.org/">Macports</a>. In this article, I will talk shortly about Homebrew.</p>
 
-<h2>Installation</h2>
-
+<h2 id="installation">Installation</h2>
 <p>To install Homebrew, type</p>
 
 <pre><code>ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
@@ -33,15 +47,14 @@
 
 <p>into your terminal.</p>
 
-<h2>Basic Usage</h2>
-
+<h2 id="basic-usage">Basic Usage</h2>
 <p>When you need to install a package, first  <code>brew update</code> to update Homebrew formulas.</p>
 
 <p>Then <code>brew install [formula]</code> to install your package.</p>
 
 <p>If an error occurs, try <code>brew doctor</code> which is Homebrew’s own self-diagnosis tool. This may give you hints on to how to fix the problem.</p>
 
-<h2>Some Useful Commands</h2>
+<h2 id="some-useful-commands">Some Useful Commands</h2>
 
 <p><code>brew upgrade</code> to update installed software</p>
 
@@ -53,19 +66,21 @@
 
 <p><code>brew tap [repo]</code>  opens a new tap(repo) to expand your options of installable software.</p>
 
-<h2>Some Useful Packages</h2>
-
+<h2 id="some-useful-packages">Some Useful Packages</h2>
 <p>There are many packages out there. Here are two I found quite useful when downloading and converting videos from the web.</p>
 
 <p><code>ffmpeg</code>: video and audio converter</p>
 
 <p><code>youtube-dl</code>: download videos from youtube.com or other video platforms</p>
 
-<h2>Sources</h2>
-
+<h2 id="sources">Sources</h2>
 <ul>
-<li><p><a href="https://github.com/mxcl/homebrew/wiki/FAQ">Homebrew wiki</a></p></li>
-<li><p><a href="http://mac.tutsplus.com/tutorials/terminal/homebrew-demystified-os-xs-ultimate-package-manager/">mac.tutsplus.com</a></p></li>
+  <li>
+    <p><a href="https://github.com/mxcl/homebrew/wiki/FAQ">Homebrew wiki</a></p>
+  </li>
+  <li>
+    <p><a href="http://mac.tutsplus.com/tutorials/terminal/homebrew-demystified-os-xs-ultimate-package-manager/">mac.tutsplus.com</a></p>
+  </li>
 </ul>
 
 ]]></content>

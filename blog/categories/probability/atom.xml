@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Probability | Kutup]]></title>
+  <link href="http://taylansengul.github.io/blog/categories/probability/atom.xml" rel="self"/>
+  <link href="http://taylansengul.github.io/"/>
+  <updated>2013-12-24T15:07:40-08:00</updated>
+  <id>http://taylansengul.github.io/</id>
+  <author>
+    <name><![CDATA[Taylan Sengul]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hat-check Problem]]></title>
+    <link href="http://taylansengul.github.io/blog/2013/12/24/hat-check-problem/"/>
+    <updated>2013-12-24T14:49:11-08:00</updated>
+    <id>http://taylansengul.github.io/blog/2013/12/24/hat-check-problem</id>
+    <content type="html"><![CDATA[<p>Each of $n$ customers gives a hat to a hat-check person at a restaurant. The hat-check person gives the hats back to the customers in a random order. What is the expected number of customers who get back their own hat?</p>
+
+<h2 id="solution">Solution</h2>
+<p>Let $X_i$ be 1 if i-th customer gets own hat back and 0 otherwise. 
+Clearly $E[X_i] = 0 \times Pr(X_i = 0) + 1 \times Pr(X_i = 1) = 0 + 1 \times 1/n = 1/n$.
+Let $X$ be the number of customers who get back their own hat.
+Then <script type="math/tex">X = \sum_{i=1}^n X_i</script>.
+By linearity $E[X] = \sum_{i=1}^n E[X_i] = 1$.</p>
+]]></content>
+  </entry>
+  
+</feed>
