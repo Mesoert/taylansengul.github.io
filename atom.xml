@@ -4,7 +4,7 @@
   <title><![CDATA[Kutup]]></title>
   <link href="http://taylansengul.github.io/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-12-27T13:01:13-08:00</updated>
+  <updated>2013-12-28T04:54:48-08:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How Much Would You Pay to Play This Game?]]></title>
+    <link href="http://taylansengul.github.io/blog/2013/12/28/how-much-would-you-pay-to-play-this-game/"/>
+    <updated>2013-12-28T03:59:56-08:00</updated>
+    <id>http://taylansengul.github.io/blog/2013/12/28/how-much-would-you-pay-to-play-this-game</id>
+    <content type="html"><![CDATA[<h2 id="problem">Problem</h2>
+<p>Consider the following game. You are playing a die game where you gain x dollars if the result of the rolled die turns out to be x. If you do not like the outcome, you are given a second try and if you do not like the outcome of the second try, you are given a third try. How much would you pay to play this game?</p>
+
+<h2 id="solution">Solution</h2>
+<p>As a rational person, you are willing to pay anything less than your expected gain to play this game. And your expected gain depends on your strategy. So first, let’s find the best possible strategy for this game.</p>
+
+<p>If you are in your last try, then you have no choice but to accept the outcome. In this case, your expected gain is $3.5 (\( 3.5 = 1\times \frac{1}{6} + \cdots 6 \times \frac{1}{6}\)). So in your second try, you should only accept a 4, 5 or 6. Because they all beat your expected earning in your last try. So with this best strategy at second try, our expectation is $3.5 if the outcome is 1, 2, 3 and $x if x is 4, 5, 6. This yields an expected gain of
+\[
+4.25 = 3.5 \times \frac{1}{2} + 4 \times \frac{1}{6} + 5 \times \frac{1}{6} + 6 \times \frac{1}{6} = 1.75 + 2.5
+\]
+in dollars. Hence in your first try, you should only accept a 5 or 6; accepting anything less than your expected gain ($4.25) is meaningless.</p>
+
+<p>So let’s summarize the best strategy: in your first try, only accept 5 or 6. In your second try, only accept 4, 5 or 6. You have no choice for the third try. With this strategy, your expectation is $4.25 if the first die is 1, 2, 3 or 4 and $x if x is 5 or 6. Thus the expectation of the best strategy in dollars is
+\[
+4.25 \times \frac{4}{6} + 5 \times \frac{1}{6} + 6 \times \frac{1}{6} = 4.67.
+\]</p>
+
+<p>Thus you should agree to pay anything less than $4.67 to play this game.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Python Solution of Failed Twitter Interview Problem With Sketches]]></title>
@@ -75,48 +101,7 @@ WWWWWWWWWW
 17 filled spaces
 </code></pre>
 
-<p>Here is my solution</p>
-
-<pre><code>from __future__ import print_function
-def draw_filled_walls(walls):
-    """Draw the water filled between a given array of wall heights and return total number of spaces filled"""
-    left = 0
-    right = len(walls) - 1
-    left_wall = walls[left]
-    right_wall = walls[right]
-    filled = 0
-    M = max(walls)  # no of rows
-    N = len(walls)  # no of columns
-    fig = [[' '] * N for _ in range(M)]
-    while left != right:
-        if left_wall &lt;= right_wall:
-            left += 1
-            if walls[left] &gt;= left_wall:
-                left_wall = walls[left]
-            else:
-                if left_wall - walls[left] &gt; 0:
-                    filled += left_wall - walls[left]
-                    for i in range(walls[left], left_wall):
-                        fig[i][left] = '-'
-        else:
-            right -= 1
-            if walls[right] &gt;= right_wall:
-                right_wall = walls[right]
-            else:
-                if right_wall - walls[right] &gt; 0:
-                    filled += right_wall - walls[right]
-                    for i in range(walls[right], right_wall):
-                        fig[i][right] = '-'
-    # Draw
-    for i in range(M, 0, -1):
-        for j in range(N):
-            if walls[j] &gt;= i:
-                print('W', end='')
-            else:
-                print(fig[i - 1][j], end='')
-        print()
-    return filled
-</code></pre>
+<p>Here is my <a href="https://gist.github.com/taylansengul/8158583">solution</a>.</p>
 ]]></content>
   </entry>
   
@@ -125,14 +110,18 @@ def draw_filled_walls(walls):
     <link href="http://taylansengul.github.io/blog/2013/12/24/hat-check-problem/"/>
     <updated>2013-12-24T14:49:11-08:00</updated>
     <id>http://taylansengul.github.io/blog/2013/12/24/hat-check-problem</id>
-    <content type="html"><![CDATA[<p>Each of $n$ customers gives a hat to a hat-check person at a restaurant. The hat-check person gives the hats back to the customers in a random order. What is the expected number of customers who get back their own hat?</p>
+    <content type="html"><![CDATA[<p>Each of \(n\) customers gives a hat to a hat-check person at a restaurant. The hat-check person gives the hats back to the customers in a random order. What is the expected number of customers who get back their own hat?</p>
 
 <h2 id="solution">Solution</h2>
-<p>Let $X_i$ be 1 if i-th customer gets own hat back and 0 otherwise. 
-Clearly $E[X_i] = 0 \times Pr(X_i = 0) + 1 \times Pr(X_i = 1) = 0 + 1 \times 1/n = 1/n$.
-Let $X$ be the number of customers who get back their own hat.
-Then <script type="math/tex">X = \sum_{i=1}^n X_i</script>.
-By linearity $E[X] = \sum_{i=1}^n E[X_i] = 1$.</p>
+<p>Let \(X_i\) be 1 if i-th customer gets own hat back and 0 otherwise. 
+Clearly
+\[
+E[X_i] = 0 \times Pr(X_i = 0) + 1 \times Pr(X_i = 1) = 0 + 1 \times 1/n = 1/n.
+\]
+Let \(X\) be the number of customers who get back their own hat.
+Then <script type="math/tex">X = \sum_{i=1}^n X_i.</script>
+By linearity 
+\[ E[X] = \sum_{i=1}^n E[X_i] = 1. \]</p>
 ]]></content>
   </entry>
   

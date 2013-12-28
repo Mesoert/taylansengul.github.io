@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Kutup]]></title>
   <link href="http://taylansengul.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-12-27T13:01:13-08:00</updated>
+  <updated>2013-12-28T04:54:48-08:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -75,48 +75,7 @@ WWWWWWWWWW
 17 filled spaces
 </code></pre>
 
-<p>Here is my solution</p>
-
-<pre><code>from __future__ import print_function
-def draw_filled_walls(walls):
-    """Draw the water filled between a given array of wall heights and return total number of spaces filled"""
-    left = 0
-    right = len(walls) - 1
-    left_wall = walls[left]
-    right_wall = walls[right]
-    filled = 0
-    M = max(walls)  # no of rows
-    N = len(walls)  # no of columns
-    fig = [[' '] * N for _ in range(M)]
-    while left != right:
-        if left_wall &lt;= right_wall:
-            left += 1
-            if walls[left] &gt;= left_wall:
-                left_wall = walls[left]
-            else:
-                if left_wall - walls[left] &gt; 0:
-                    filled += left_wall - walls[left]
-                    for i in range(walls[left], left_wall):
-                        fig[i][left] = '-'
-        else:
-            right -= 1
-            if walls[right] &gt;= right_wall:
-                right_wall = walls[right]
-            else:
-                if right_wall - walls[right] &gt; 0:
-                    filled += right_wall - walls[right]
-                    for i in range(walls[right], right_wall):
-                        fig[i][right] = '-'
-    # Draw
-    for i in range(M, 0, -1):
-        for j in range(N):
-            if walls[j] &gt;= i:
-                print('W', end='')
-            else:
-                print(fig[i - 1][j], end='')
-        print()
-    return filled
-</code></pre>
+<p>Here is my <a href="https://gist.github.com/taylansengul/8158583">solution</a>.</p>
 ]]></content>
   </entry>
   

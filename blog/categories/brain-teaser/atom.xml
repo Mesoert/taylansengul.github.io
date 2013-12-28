@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Probability | Kutup]]></title>
-  <link href="http://taylansengul.github.io/blog/categories/probability/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Brain-teaser | Kutup]]></title>
+  <link href="http://taylansengul.github.io/blog/categories/brain-teaser/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
   <updated>2013-12-28T04:54:48-08:00</updated>
   <id>http://taylansengul.github.io/</id>
@@ -36,6 +36,72 @@ in dollars. Hence in your first try, you should only accept a 5 or 6; accepting 
 \]</p>
 
 <p>Thus you should agree to pay anything less than $4.67 to play this game.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Python Solution of Failed Twitter Interview Problem With Sketches]]></title>
+    <link href="http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview/"/>
+    <updated>2013-12-27T12:30:10-08:00</updated>
+    <id>http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview</id>
+    <content type="html"><![CDATA[<p>This is my shot at the <a href="http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/">failed Twitter interview problem</a> with a few extras using Python. The problem is this, given an array of wall heights, find the amount of water filled between these walls after a heavy rain. Suppose the given array is <code>[2,5,1,2,3,4,7,7,6]</code>, then the corresponding picture is:</p>
+
+<pre><code>       WW 
+       WWW
+ W     WWW
+ W     WWW
+ W W   WWW
+WW W W WWW
+WWWWWWWWWW
+2513121776
+</code></pre>
+
+<p>To get the picture, we define the following function</p>
+
+<pre><code>from __future__ import print_function
+def draw_walls(walls):
+    """Print an array of wall heights"""
+    M = max(walls)  # no of rows
+    N = len(walls)  # no of columns
+    for i in range(M, 0, -1):
+        for j in range(N):
+            if walls[j] &gt;= i:
+                print('W', end='')
+            else:
+                print(' ', end='')
+        print()
+    for i in range(N):
+        print(walls[i], end='')
+</code></pre>
+
+<p>and then call</p>
+
+<pre><code>draw_walls([2,5,1,2,3,4,7,7,6])
+</code></pre>
+
+<p>Anyway, a clever solution is also given in the <a href="http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/">blog page</a>. Here in addition to finding the total number of filled spaces, the following code will also sketch the walls and the water filled in the walls.</p>
+
+<p>For example, calling</p>
+
+<pre><code>walls = [2, 5, 1, 3, 1, 2, 1, 7, 7, 6]
+filled = draw_filled_walls(walls)
+print("%d filled spaces" % filled)
+</code></pre>
+
+<p>will give</p>
+
+<pre><code>       WW 
+       WWW
+ W-----WWW
+ W-----WWW
+ W-W---WWW
+WW-W-W-WWW
+WWWWWWWWWW
+     
+17 filled spaces
+</code></pre>
+
+<p>Here is my <a href="https://gist.github.com/taylansengul/8158583">solution</a>.</p>
 ]]></content>
   </entry>
   
