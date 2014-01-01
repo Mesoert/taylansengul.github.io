@@ -4,7 +4,7 @@
   <title><![CDATA[Kutup]]></title>
   <link href="http://taylansengul.github.io/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-12-28T04:54:48-08:00</updated>
+  <updated>2014-01-01T14:46:05-05:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -14,9 +14,30 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Achieving Mastery]]></title>
+    <link href="http://taylansengul.github.io/blog/2014/01/01/achieving-mastery/"/>
+    <updated>2014-01-01T14:37:15-05:00</updated>
+    <id>http://taylansengul.github.io/blog/2014/01/01/achieving-mastery</id>
+    <content type="html"><![CDATA[<p>Below is a summary of the talk by <a href="http://www.youtube.com/watch?v=grjWTlRRpoo">Robert Greene - Achieving Mastery</a>.</p>
+
+<p>Human brain is a master piece of design which evolved over millions of years. It is an instrument which if you focus deeply on a subject, you understand better and better and more layers of it are revealed to you.</p>
+
+<p>You can’t become a master of something by surfing here and there on the internet.</p>
+
+<p><strong>How to achieve mastery in our time period?</strong></p>
+
+<p>Distraction makes it harder for us to focus. On the other hand, there is an incredible explosion of information which can be reached very easily.</p>
+
+<p>Thus making connection between ideas is the future of the mastery.</p>
+
+<p>But to become a master of anything, you have to master the basics: Building discipline, being able to practice for a long period of time and being able to focus. Nothing we invent -no drug or application- will ever change this.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How Much Would You Pay to Play This Game?]]></title>
     <link href="http://taylansengul.github.io/blog/2013/12/28/how-much-would-you-pay-to-play-this-game/"/>
-    <updated>2013-12-28T03:59:56-08:00</updated>
+    <updated>2013-12-28T06:59:56-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/12/28/how-much-would-you-pay-to-play-this-game</id>
     <content type="html"><![CDATA[<h2 id="problem">Problem</h2>
 <p>Consider the following game. You are playing a die game where you gain x dollars if the result of the rolled die turns out to be x. If you do not like the outcome, you are given a second try and if you do not like the outcome of the second try, you are given a third try. How much would you pay to play this game?</p>
@@ -42,7 +63,7 @@ in dollars. Hence in your first try, you should only accept a 5 or 6; accepting 
   <entry>
     <title type="html"><![CDATA[A Python Solution of Failed Twitter Interview Problem With Sketches]]></title>
     <link href="http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview/"/>
-    <updated>2013-12-27T12:30:10-08:00</updated>
+    <updated>2013-12-27T15:30:10-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview</id>
     <content type="html"><![CDATA[<p>This is my shot at the <a href="http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/">failed Twitter interview problem</a> with a few extras using Python. The problem is this, given an array of wall heights, find the amount of water filled between these walls after a heavy rain. Suppose the given array is <code>[2,5,1,2,3,4,7,7,6]</code>, then the corresponding picture is:</p>
 
@@ -108,7 +129,7 @@ WWWWWWWWWW
   <entry>
     <title type="html"><![CDATA[Hat-check Problem]]></title>
     <link href="http://taylansengul.github.io/blog/2013/12/24/hat-check-problem/"/>
-    <updated>2013-12-24T14:49:11-08:00</updated>
+    <updated>2013-12-24T17:49:11-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/12/24/hat-check-problem</id>
     <content type="html"><![CDATA[<p>Each of \(n\) customers gives a hat to a hat-check person at a restaurant. The hat-check person gives the hats back to the customers in a random order. What is the expected number of customers who get back their own hat?</p>
 
@@ -128,7 +149,7 @@ By linearity
   <entry>
     <title type="html"><![CDATA[Homebrew: A Short Tutorial]]></title>
     <link href="http://taylansengul.github.io/blog/2013/11/25/homebrew/"/>
-    <updated>2013-11-25T07:49:38-08:00</updated>
+    <updated>2013-11-25T10:49:38-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/11/25/homebrew</id>
     <content type="html"><![CDATA[<h2 id="what-is-it">What is it?</h2>
 <p>After a certain point in my coding life, I had to download new software which often did not come as executables. Usually I found some instructions on websites on how to install these software. But the process was lengthy and demotivating, mostly installing other dependencies and dependencies of those dependencies and running cryptic commands.</p>

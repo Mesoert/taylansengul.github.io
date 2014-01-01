@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Homebrew | Kutup]]></title>
   <link href="http://taylansengul.github.io/blog/categories/homebrew/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-12-28T04:54:48-08:00</updated>
+  <updated>2014-01-01T14:46:05-05:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Homebrew: A Short Tutorial]]></title>
     <link href="http://taylansengul.github.io/blog/2013/11/25/homebrew/"/>
-    <updated>2013-11-25T07:49:38-08:00</updated>
+    <updated>2013-11-25T10:49:38-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/11/25/homebrew</id>
     <content type="html"><![CDATA[<h2 id="what-is-it">What is it?</h2>
 <p>After a certain point in my coding life, I had to download new software which often did not come as executables. Usually I found some instructions on websites on how to install these software. But the process was lengthy and demotivating, mostly installing other dependencies and dependencies of those dependencies and running cryptic commands.</p>

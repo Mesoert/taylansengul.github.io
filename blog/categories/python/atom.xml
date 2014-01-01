@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Kutup]]></title>
   <link href="http://taylansengul.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://taylansengul.github.io/"/>
-  <updated>2013-12-28T04:54:48-08:00</updated>
+  <updated>2014-01-01T14:46:05-05:00</updated>
   <id>http://taylansengul.github.io/</id>
   <author>
     <name><![CDATA[Taylan Sengul]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[A Python Solution of Failed Twitter Interview Problem With Sketches]]></title>
     <link href="http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview/"/>
-    <updated>2013-12-27T12:30:10-08:00</updated>
+    <updated>2013-12-27T15:30:10-05:00</updated>
     <id>http://taylansengul.github.io/blog/2013/12/27/failed-twitter-interview</id>
     <content type="html"><![CDATA[<p>This is my shot at the <a href="http://qandwhat.apps.runkite.com/i-failed-a-twitter-interview/">failed Twitter interview problem</a> with a few extras using Python. The problem is this, given an array of wall heights, find the amount of water filled between these walls after a heavy rain. Suppose the given array is <code>[2,5,1,2,3,4,7,7,6]</code>, then the corresponding picture is:</p>
 
