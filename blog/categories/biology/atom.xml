@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Biology | Kutup]]></title>
+  <link href="http://taylansengul.github.io/blog/categories/biology/atom.xml" rel="self"/>
+  <link href="http://taylansengul.github.io/"/>
+  <updated>2014-01-22T14:46:37-05:00</updated>
+  <id>http://taylansengul.github.io/</id>
+  <author>
+    <name><![CDATA[Taylan Sengul]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Astrobiology Lectures Week 1]]></title>
+    <link href="http://taylansengul.github.io/blog/2014/01/22/astrobiology-lecture-1/"/>
+    <updated>2014-01-22T14:22:15-05:00</updated>
+    <id>http://taylansengul.github.io/blog/2014/01/22/astrobiology-lecture-1</id>
+    <content type="html"><![CDATA[<p>My notes on the online Coursera class: Astrobiology and the Search for Extraterrestrial Life.</p>
+
+<h1 id="week-1-module-1">Week 1 Module 1</h1>
+
+<h2 id="introduction">1.1 - Introduction</h2>
+<p>The biggest question of astrobiology is “Are we alone in the Universe?”.</p>
+
+<h2 id="the-history-of-astrobiology">1.2 - The history of astrobiology</h2>
+<p>We need to be careful about speculation of extraterrestrial life as many great scientists have fallen into this trap in the past.</p>
+
+<h2 id="what-is-life">1.3 - What is Life?</h2>
+<p>Life is very difficult to define very accurately:<br />
+All of the defining characteristics of life are shared by some of the non-living things.<br />
+ex. (grows(tornado), replicates(computer virus), metabolizes(forest fire), evolves(computer programs))<br />
+There are two types of definitions in philosophy.<br />
+- Natural kind - e.g. gold has a precise definition<br />
+- Non natural kind - e.g. chair does not have have a precise definition</p>
+
+<h2 id="life-on-earth">1.4 - Life on Earth</h2>
+<p>Physical parameters (temperature, radiation, acidity) defines a biospace.  Boundaries of the biospace, the most extreme environments, are occupied by microbes called “extremophiles”.<br />
+Life is a thin layer on and just beneath the surface of the Earth.<br />
+The upper temperature limit for life is about 120C, making the maximum depth about 5 to 10 kilometers.<br />
+There is microbial life on clouds.<br />
+Currently active life has only be shown at about 3 km height.<br />
+So the earth’s biosphere is only about 10-20 km thick.<br />
+Some physical conditions that are suitable for life on earth may overlap with conditions on other planetary bodies.  </p>
+
+<h2 id="structure-of-life-1">1.5 - Structure of Life 1</h2>
+<p>Life on earth is mostly made up from 6 basic elements: carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur.<br />
+Life on earth is carbon and water based.<br />
+Water is important because molecules have to move and that is only possible in a liquid medium.  </p>
+
+<h2 id="the-structure-of-life-2-cells">1.6 - The structure of Life 2: Cells</h2>
+<p>Cells have: membrane, energy system, information system.<br />
+If cells didn’t have a membrane, they would simply dissipate into the environment.  </p>
+
+<h2 id="week-1-module-2">Week 1 Module 2</h2>
+
+<h2 id="origins-of-life-building-blocks">2.1 Origins of Life: Building Blocks</h2>
+<p>The building blocks of life:<br />
+    - can be produced in simulated early Earth conditions (Miller–Urey experiment)<br />
+    - can be found in extraterrestrial materials<br />
+Which building blocks came first? Proteins or nucleic acids?</p>
+
+<h2 id="origins-of-life-location">2.2 Origins of Life: Location</h2>
+<p>Possible locations: deep sea vents, impact craters, beaches, volcanic hot springs.<br />
+All these locations might have worked together to produce different building blocks.  </p>
+
+<h2 id="origins-of-life---alternate-chemistries">2.3 - Origins of Life - Alternate Chemistries</h2>
+<p>Life on earth is based on carbon.<br />
+Advantages of carbon:<br />
+    - great versatility in the sort of chemical compounds it can form.<br />
+    - forms stable compounds.<br />
+Alternative to carbon: silicon. But not as as favorable as carbon because it forms very stable compounds with oxygen.<br />
+Life also needs a solvent.<br />
+Advantages of water:<br />
+    - Wide temperature range<br />
+    - Floats when freezes<br />
+Alternative to carbon: Ammonia. But not as as favorable as water.<br />
+The carbon-water biospace seems to be the most plausible or likely to be the most common architecture for other life.</p>
+]]></content>
+  </entry>
+  
+</feed>
